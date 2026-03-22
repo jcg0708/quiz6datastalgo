@@ -7,7 +7,7 @@ const API_SERVICES = 'http://localhost:8000/api/v1/services';
 const API_ORDERS = 'http://localhost:8000/api/v1/orders';
 
 // Replace with your platform PayPal client-id
-const PAYPAL_CLIENT_ID = process.env.REACT_APP_PAYPAL_CLIENT_ID || 'sb';
+const PAYPAL_CLIENT_ID = process.env.REACT_APP_PAYPAL_CLIENT_ID || 'AY_Cs_wAqI__TxlTPzBpimvBryreibaanNngcAXf1hVMVI1e1OGjjtNuSVJnUsqzNweUphsHaUf8S7ly';
 
 const StarRating = ({ rating }) => {
   const stars = Math.round(rating);
@@ -136,7 +136,7 @@ const DetailScreen = () => {
 
           {orderSuccess ? (
             <div className="alert alert-success">
-              🎉 Payment successful! Your order has been recorded.
+              🎉 Payment successful! Your order has been recorded!
             </div>
           ) : token ? (
             <div>
