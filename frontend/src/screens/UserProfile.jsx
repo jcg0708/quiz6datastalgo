@@ -26,7 +26,7 @@ const UserProfile = () => {
         setEditForm(profileRes.data);
         setOrders(ordersRes.data);
       })
-      .catch(() => setError('Failed to load profile data.'))
+      .catch(() => setError('Unable to load your profile. Please refresh the page or contact support.'))
       .finally(() => setLoading(false));
   }, [token]);
 

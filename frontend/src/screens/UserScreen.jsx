@@ -48,7 +48,7 @@ const UserScreen = () => {
       setUsers(usersRes.data);
       setApplications(appsRes.data);
     } catch {
-      setError('Failed to load data.');
+      setError('Failed to load users and applications. Please try again.');
     } finally {
       setLoading(false);
     }

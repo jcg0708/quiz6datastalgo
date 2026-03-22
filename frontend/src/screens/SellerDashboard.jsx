@@ -42,7 +42,7 @@ const SellerDashboard = () => {
       });
       setServices(res.data);
     } catch {
-      setError('Failed to load services.');
+      setError('Unable to load your services. Please try again.');
     } finally {
       setLoading(false);
     }
